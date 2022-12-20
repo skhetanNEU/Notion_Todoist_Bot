@@ -9,7 +9,7 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Load the json file to get the todoist id
-file = open('SECRET.json')
+file = open('secret.json')
 data = json.load(file)
 todoistId = data['todoistId']
 api = TodoistAPI(todoistId)
