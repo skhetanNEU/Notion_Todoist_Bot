@@ -28,7 +28,7 @@ headers = {
     'Notion-Version': '2022-06-28'
 }
 
-todoist_api = TodoistAPI("f8eb45e6cac5c33cf3a928ee3b2e1a27c3a4a2b7")
+todoist_api = TodoistAPI(todoistId)
 
 
 def get_relation(project_id):
