@@ -25,6 +25,7 @@ Started with Thomas Frank's Ultimate Task template (https://thomasjfrank.com/tem
 1. College Tasks
 2. Study Tasks
 3. Office Tasks (Since I am interning at a company)
+4. Later tasks (Tasks which don't have a due date but need to be captured in Notion)
 
 <img width="964" alt="image" src="https://user-images.githubusercontent.com/98121476/208753738-fcbf81b4-6c2d-4bc2-8362-aef172e7fc4a.png">
 
@@ -67,7 +68,7 @@ Every morning we delete the tasks from Todoist which have been added to Notion t
 ### Setup
 Starting with the implementation, I created a new connection to get the notion api key and named it "python-bot". Once we had the key, we added the connection "python-bot" from all the projects and the main database page. 
 
-By sharing all the pages, we can get the view ID of all the projects and looking at the result of a simple GET, I got the database id for the projects. Using all these keys and IDs I created the secret.json file containing all the required keys and ids.
+By sharing all the pages, we can get the database ID of the projects and by doing a simple GET on todoist tasks, we can get to know the project ids for Todoist projects. Using all these keys and IDs I created the secret.json file containing all the required keys and ids.
 
 I also got the api key for my todoist account and saved it in secret.json.
 
