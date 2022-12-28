@@ -15,10 +15,12 @@ tasksDatabase = data['tasksDatabase']
 officeTasks = data['officeTasks']
 studyTasks = data['studyTasks']
 collegeTasks = data['collegeTasks']
+laterTasks = data['laterTasks']
 todoistId = data['todoistId']
 collegeTasksProjectID = data['collegeTasksProjectID']
 studyTasksProjectID = data['studyTasksProjectID']
 officeTasksProjectID = data['officeTasksProjectID']
+laterTasksProjectID = data['laterTasksProjectID']
 file.close()
 
 url = 'https://api.notion.com/v1/pages'
@@ -38,6 +40,8 @@ def get_relation(project_id):
         return studyTasks, "Study"
     elif project_id == officeTasksProjectID:
         return officeTasks, "Office"
+    elif project_id == laterTasksProjectID:
+        return laterTasks, "Later"
 
 
 def add_to_notion(new_tasks):
